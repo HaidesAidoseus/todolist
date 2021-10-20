@@ -7,7 +7,13 @@ class App extends Component {
 	constructor(props) {
 		super(props)
 		this.state={
-			items: [],
+			items: [
+				{id: 1, name: "first", title: "Попить пивка"},
+				{id: 2, name: "second", title: "Сделать домашнюю работу",completed: true},
+				{id: 3, name: "third", title: "Поиграть в игрушки"},
+				{id: 4, name: "fourth", title: "Поспать",completed: true},
+				{id: 5, name: "fifth", title: "Сделать работу на работе"}
+			],
 			itemsToShow: "all",
 			id: uuid(),
 			item: '',
